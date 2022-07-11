@@ -6,6 +6,7 @@ public class Main {
     public static void main(String[] args) {
         int choice;
         int choice1;
+        String choice2 = null;
         Scanner scanner = new Scanner(System.in);
         do {
             System.out.println("----CHƯƠNG TRÌNH QUẢN LÝ SẢN PHẨM----");
@@ -32,6 +33,21 @@ public class Main {
                     managerProduct.editProduct();
                     break;
                 case 4:
+//                    System.out.println("Nhập mã sản phẩm muốn xóa: ");
+//                    int codeProduct = Integer.parseInt(scanner.nextLine());
+//                    do {
+//                        System.out.println("Nhập Y để xóa");
+//                        System.out.println("Nhập các ký tự khác trở về menu:");
+//                        System.out.println("Lựa chọn của bạn:");
+//                        choice2 = scanner.nextLine();
+//                        switch (choice2){
+//                            case "Y":
+//                                managerProduct.deleteProduct(codeProduct);
+//                                break;
+//                            default:
+//                                break;
+//                        }
+//                    }while (!choice2.equals(""));
                     managerProduct.deleteProduct();
                     break;
                 case 5:
